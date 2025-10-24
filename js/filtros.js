@@ -3,7 +3,7 @@ let statusFilter = document.getElementById("statusFilter");
 let speciesFilter = document.getElementById("speciesFilter");
 let container = document.getElementById("characterContainer");
 let statusMsg = document.getElementById("statusMsg");
-let toggleDark = document.getElementById("toggleDark");
+let darkToggle = document.getElementById("darkToggle");
 
 let modal = document.getElementById("modal");
 let modalBody = document.getElementById("modalBody");
@@ -16,12 +16,14 @@ let currentSpecies = "";
 let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
 
 // Estado inicial del dark mode
-let darkToggle = document.getElementById("darkToggle");
-darkToggle.addEventListener("change", () => {
-    document.body.classList.toggle("dark");
-    let ball = darkToggle.nextElementSibling.firstElementChild;
-    ball.style.transform = darkToggle.checked ? "translateX(100%)" : "translateX(0)";
-});
+function darkMode() {
+    darkToggle.addEventListener("change", () => {
+        document.body.classList.toggle("dark");
+        let ball = darkToggle.nextElementSibling.firstElementChild;
+        ball.style.transform = darkToggle.checked ? "translateX(100%)" : "translateX(0)";
+    });
+}
+darkMode()
 if (localStorage.getItem("theme") === "dark") {
     document.documentElement.classList.add("dark");
 }
