@@ -19,3 +19,16 @@ Requerimientos Grupo 1 – Rick & Morty Explorer
 - Modal de detalle al hacer clic en un personaje: mostrar origen, ubicación, episodios, género, fecha de creación.
 - Implementar paginación o botón de 'Cargar más'.
 - Estilizar con Tailwind con paleta inspirada en la serie.
+Criterios de Aceptación
+- La búsqueda funciona correctamente con debounce.
+- Los filtros aplican de manera individual y combinada.
+- El modal se abre y se cierra con ESC y clic fuera, con control de foco.
+- Se muestran estados de loading, error y vacío.
+- Uso de delegación de eventos y métodos de arrays.
+- Estilo visual atractivo con Tailwind, responsive y accesible.
+Rúbrica de Evaluación
+- Funcionalidad – 40%
+- Calidad del código – 20%
+- UI/UX y accesibilidad – 15%
+- Trabajo en equipo y presentación – 15%
+- Extras (dark mode, favoritos, caching, etc.) – 10%
