@@ -1,7 +1,18 @@
 function loadHeader() {
   const headerHTML = `
  
-  <header>
+  <header class="bg-amber-200 h-35 w-full relative overflow-hidden border-2 ">
+      <img class="h-full object-cover object-center hidden lg:block"
+        <source src="../assets/img/logo.png" />
+
+      <img src="../assets/img/logo2.png"
+        alt="Rick and Morty"
+        class="h-full object-cover object-center md:hidden" />
+
+      <img src="../assets/img/Logo3.png"
+        alt="Rick and Morty"
+        class="h-full object- object-center hidden md:block lg:hidden" />
+
     <div class="fixed top-4 right-4 z-50 p-2 md:hidden">
       <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox" />
       <label id="menuheader" class="icon-menu cursor-portal" for="check-icon">
