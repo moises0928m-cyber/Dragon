@@ -1,13 +1,12 @@
   let contenedor = document.querySelector("#cards");
 
-// 🔹 Leer los favoritos de tu compañero
+// favoritos del almacenamiento
 let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
 
 if (favoritos.length === 0) {
     contenedor.innerHTML = `<p class="text-gray-400 col-span-3 text-center">No hay favoritos aún 😢</p>`;
 } else {
     favoritos.forEach(fav => {
-        // Para cada favorito, vamos a buscar los datos completos desde la API
         fetch(`https://rickandmortyapi.com/api/character/${fav.id}`)
           .then(res => res.json())
           .then(char => {
