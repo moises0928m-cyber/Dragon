@@ -5,6 +5,12 @@ let modalTitulo = document.querySelector("#modalTitulo");
 let modalContenido = document.querySelector("#modalContenido");
 let botonCerrarModal = document.querySelector("#cerrarModal");
 
+export function initEpisodios() {
+    if (!document.querySelector("#episodios-container")) return;
+    getEpisodes();
+}
+
+
 async function getEpisodes() {
     try {
 
